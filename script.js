@@ -31,17 +31,8 @@ var canEnterFactory = false;
 //show page functions
 
 function ShowMain(){
-  document.getElementById("header").style.display = `block`;
-  document.getElementById("balance").style.display = `block`;
-  document.getElementById("moneyPerClick").style.display = `block`;
-  document.getElementById("moneyPerSecond").style.display = `block`;
-  document.getElementById("nextUpgrade").style.display = `block`;
-  document.getElementById("workersCounter").style.display = `block`;
-  document.getElementById("makeMoney").style.display = `inline`;
-  document.getElementById("buyUpgrade").style.display = `inline`;
-  document.getElementById("hireWorkers").style.display = `inline`;
-  document.getElementById("gamble").style.display = `inline`;
-  document.getElementById("blackMarket").style.display = `inline`;
+  document.getElementById("mainBlock").style.display = `block`;
+  document.getElementById("mainInline").style.display = `inline`;
   Update()
 }
 
