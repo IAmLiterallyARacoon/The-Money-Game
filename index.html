@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Money Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id = "mainPage">
+    <h1 id="header" class = "header">The Money Game</h1><br>
+    <p id = "balance" class = "text">Balance: £0</p>
+    <p id = "moneyPerClick" class = "text">Money Per Click: £1</p>
+    <p id = "moneyPerSecond" class = "text">Money Per Second: £0</p>
+    <p id = "nextUpgrade" class = "text">Next Upgrade Price: £100</p>
+    <p id = "workersCounter" class = "text">Workers: 0</p>
+    <button id = "makeMoney" class = "button">Make Money</button>
+    <button id = "buyUpgrade" class = "button">Buy Upgrade</button>
+    <br><br>
+    <button id = "hireWorkers" class = "button">Hire Workers</button>
+    <button id = "gamble" class = "button">Gamble</button>
+    <br><br>
+    <button id = "blackMarket" class = "button">Enter the Black Market</button>
+  </div>
+
+  <!-- Code for Workers --->
+  <div id = "workerScreen">
+    <button id = "backButtonFactory" class = "backButton">Back</button><br>
+    <h1 id="Wheader"class = "header">Hire Workers</h1><br>
+    <p id = "Wbalance" class = "text"></p>
+    <p id = "WmoneyPerClick" class = "text"></p>
+    <p id = "WmoneyPerSecond" class = "text"></p>
+    <p id = "WnextUpgrade" class = "text"></p>
+    <p id = "WworkersCounter" class = "text"></p>
+    <button id = "buyBasicWorker" class = "button">Basic Worker</button>
+    <button id = "buyHardWorker" class = "button">Hard Worker</button>
+    <button id = "buyHarderWorker" class = "button">Harder Worker</button>
+    <button id = "buyEliteWorker" class = "button">Elite Worker</button>
+    <button id = "buySuperWorker" class = "button">Super Worker</button>
+  </div>
+
+<!-- Code for Gambling --->
+  <div id = "gamblingScreen">
+    <button  id = "backButtonCasino" class = "backButton">Back</button><br>
+    <h1 id = "Gheader"class = "header">Gamble<h1><br>
+    <p id = "Gbalance" class = "gambleText">Balance: £</p>
+    <p id = "GmoneyPerClick" class = "gambleText">Money Per Click: £</p>
+    <p id = "GmoneyPerSecond" class = "gambleText">Money Per Second: £</p>
+    <p id = "GnextUpgrade" class = "gambleText">Next Upgrade Price: £</p>
+    <p id = "GworkersCounter" class = "gambleText">Workers: </p>
+    <br>
+    <p id = "setAmountText" class = "text">Set Amount</p>
+    <button id = "gamble100" class = "gambleButton">Gamble £100</button>
+    <button id = "gamble1000" class = "gambleButton">Gamble £1,000</button>
+    <button id = "gamble10000" class = "gambleButton">Gamble £10,000</button>
+    <button id = "gamble100000" class = "gambleButton">Gamble £100,000</button>
+    <button id = "gamble1000000" class = "gambleButton">Gamble £1,000,000</button>
+    <br>
+    <p id = "resultSet" class = "smallText"></p>
+  </div>
+
+<!--Code for Black Market -->
+  <div id = "blackMarketScreen">
+    <button id = "backButtonBlackMarket" class = "backButton">Back</button><br>
+    <h1 id = "Bheader" class = "header">The Black Market</h1><br>
+    <p id = "Bbalance" class = "text">Balance: £${balance}</p>
+    <p id = "BmoneyPerClick" class = "text">Money Per Click: £${increment}</p>
+    <p id = "BmoneyPerSecond" class = "text">Money Per Second: £${moneyPerSecond}</p>
+    <p id = "BnextUpgrade" class = "text">Next Upgrade Price: £${upgradePrice}</p>
+    <p id = "BworkersCounter" class = "text">Workers: ${workers}</p>
+    <br><br>
+    <button id = "MPCIncreaser" class = "smallButton">Increase Money Per Click</button>
+    <p class = "smallText" id = "MPCIncreaserElement1">Increases Money Per Click By 1.</p>
+    <br>
+    <p class = "smallText" id = "MPCIncreaserElement2">Costs £100,000.</p>
+    <br><br>
+    <button id = "MPSIncreaser" class = "smallButton">Increase Money Per Second</button>
+    <p class = "smallText" id = "MPSIncreaserElement1">Increases Money Per Second By 1.</p>
+    <br>
+    <p class = "smallText" id = "MPSIncreaserElement2">Costs £1,000,000.</p>
+    <br><br>
+    <button id = "governmentGrants" class = "smallButton">Activate Government Grants</button>
+    <p class = "smallText" id = "governmentGrantsElement1">Activates the possibility that the government gives you free money at any second.</p>
+    <br>
+    <p class = "smallText" id = "governmentGrantsElement2">Costs £500,000.</p>
+    <br><br>
+    <button id = "workerIncreaser" class = "smallButton">Increase Workers</button>
+    <p class = "smallText" id = "workerIncreaserElement1">Increases the amount of Basic Workers you have by 5 without increasing the cost to buy more.</p>
+    <br>
+    <p class = "smallText" id = "workerIncreaserElement2">Costs £5,000,000.</p>
+    <br><br>
+    <button id = "upgradePriceHalver" class = "smallButton">Upgrade Price Reducer</button>
+    <p class = "smallText" id = "upgradePriceHalverElement1">Reduces the price of upgrades by half.</p>
+    <br>
+    <p class = "smallText" id = "upgradePriceHalverElement2">Costs £51,200.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
